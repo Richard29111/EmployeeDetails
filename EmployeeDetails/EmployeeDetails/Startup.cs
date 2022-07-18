@@ -32,8 +32,8 @@ namespace EmployeeDetails
 
           
 
-            services.AddDbContext<EmployeeContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped<IEmployee, EmployeeRepository>();
+            services.AddDbContext<EmployeeDb>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IEmployeeRepository, EmployeeService>();
             //services.AddControllerWithViews();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
        

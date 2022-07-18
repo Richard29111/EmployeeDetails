@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EmployeeDetails.Migrations
 {
-    [DbContext(typeof(EmployeeContext))]
+    [DbContext(typeof(EmployeeDb))]
     [Migration("20220711092933_init")]
     partial class init
     {
